@@ -1,3 +1,22 @@
+function verificaParola() {
+  // Leggi la parola inserita dall'utente
+  var parola = document.getElementById("parola").value;
+
+  // Rimuovi gli spazi e converi la parola in minuscolo
+  parola = parola.replace(/\s/g, "").toLowerCase();
+
+  // Controlla se la parola è palindroma e se è uguale alla parola magica
+  if (parola === "palindroma") {
+    document.getElementById("risultato").innerHTML = "Hai scritto la parola magica corretta!";
+  } else {
+    document.getElementById("risultato").innerHTML = "Mi dispiace, la parola magica è diversa.";
+  }
+}
+
+
+
+
+
 const playButton = document.getElementById("playButton");
 playButton.addEventListener("click", play);
 
