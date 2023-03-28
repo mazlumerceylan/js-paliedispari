@@ -1,6 +1,6 @@
 function verificaParola() {
   // Leggi la parola inserita dall'utente
-  var parola = document.getElementById("parola").value;
+  let parola = document.getElementById("parola").value;
 
   // Rimuovi gli spazi e converi la parola in minuscolo
   parola = parola.replace(/\s/g, "").toLowerCase();
@@ -12,7 +12,6 @@ function verificaParola() {
     document.getElementById("risultato").innerHTML = "Mi dispiace, la parola magica è diversa.";
   }
 }
-
 
 
 
@@ -48,6 +47,6 @@ function play() {
   }
 
   // Mostra il risultato
-  let message = "Il numero del computer era " + pcNumber + ". La somma è " + sum + ", quindi è " + result + ". " + outcome;
+  const message = "Il numero del computer era " + pcNumber + ". La somma è " + sum + ", quindi è " + result + ". " + outcome;
   document.getElementById("result").innerHTML = message;
 }
