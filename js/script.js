@@ -6,7 +6,7 @@ function verificaParola() {
   parola = parola.replace(/\s/g, "").toLowerCase();
 
   // Controlla se la parola è palindroma e se è uguale alla parola magica
-  if (parola === "palindroma") {
+  if (parola === "palidroma") {
     document.getElementById("risultato").innerHTML = "Hai scritto la parola magica corretta!";
   } else {
     document.getElementById("risultato").innerHTML = "Mi dispiace, la parola magica è diversa.";
